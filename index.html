@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal shelter 🐱</title>
+    <style>
+      body {
+        background: radial-gradient(
+          328px at 2.9% 15%,
+          rgb(191, 224, 251) 0%,
+          rgb(232, 233, 251) 25.8%,
+          rgb(252, 239, 250) 50.8%,
+          rgb(234, 251, 251) 77.6%,
+          rgb(240, 251, 244) 100.7%
+        );
+      }
+      h1 {
+        text-align: center;
+        font-family: serif;
+        color: #5dacbd;
+      }
+      h2 {
+        text-align: center;
+        font-family: serif;
+        color: #24527a;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 400px;
+        border-radius: 3%;
+      }
+      .content {
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      a {
+        text-decoration: none;
+        color: #24527a;
+      }
+      a:hover {
+        text-decoration: underline;
+        transition: all 200ms ease-in-out;
+      }
+      button {
+        display: block;
+        padding: 15px 20px;
+        margin: 30px auto;
+        font-size: 20px;
+        color: #24527a;
+        background: white;
+        border: 1.5px solid #24527a;
+        border-radius: 30px;
+        box-shadow: 0px 5px 5px 0px #24527a;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: #24527a;
+        color: white;
+      }
+      div {
+        text-align: center;
+        color: #5dacbd;
+      }
+      div {
+        color: #24527a;
+      }
+      .email {
+        color: #5dacbd;
+      }
+      .email:hover {
+        text-decoration: underline;
+        transition: all 200ms ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🐈<br />Bring happines to your life</h1>
+    <h2>Animal shelter</h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/951/original/ludemeula-fernandes-9UUoGaaHtNE-unsplash.jpg?1652211332"
+      alt="cat"
+    />
+    <p class="content">
+      There are many health benefits of owning a pet. They can increase
+      opportunities to exercise, get outside, and socialize. Regular walking or
+      playing with pets can decrease blood pressure, cholesterol levels, and
+      triglyceride levels. Pets can help manage loneliness and depression by
+      giving us companionship.
+    </p>
+    <hr />
+    <p class="content">
+      Studies have shown that the bond between people and their pets is linked
+      to several health benefits, including: Decreased blood pressure,
+      cholesterol levels, triglyceride levels, feelings of loneliness, anxiety,
+      and symptoms of PTSD. Increased opportunities for exercise and outdoor
+      activities; better cognitive function in older adults; and more
+      opportunities to socialize.
+    </p>
+
+    <a
+      href="https://www.cdc.gov/healthypets/keeping-pets-and-people-healthy/how.html#:~:text=There%20are%20many%20health%20benefits,depression%20by%20giving%20us%20companionship."
+      target="_blank"
+    >
+      <em><strong>More benefits of getting animal</strong></em>
+    </a>
+    <p class="button">
+      <button>Give a home</button>
+    </p>
+    <div>Email:<span class="email">giveahome@gmail.com</span></div>
+    <script>
+      function get() {
+        let name = prompt("What is your name?");
+        let animal = prompt("What animal do you want to take?");
+        let amount = prompt("How many anymals do you want to take?");
+        if (name.length > 0 && animal.length > 0 && amount.length > 0) {
+          alert(
+            "Thank you " +
+              name +
+              "!" +
+              amount +
+              " " +
+              animal +
+              "s " +
+              "gonna be at your house soon❤️"
+          );
+        } else {
+          alert("Sorry,but you didn't choose any animal😞");
+        }
+      }
+      let getButton = document.querySelector("button");
+      getButton.addEventListener("click", get);
+    </script>
+  </body>
+</html>
